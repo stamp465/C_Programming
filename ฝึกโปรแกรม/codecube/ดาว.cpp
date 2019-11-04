@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+	long int a,b,c,i,j;
+	scanf("%d",&a);
+	for(i=1;i<a+2;i=i+2)
+	{
+		for(j=a-i;j>0;j=j-2)
+		{
+			printf("-");
+		}
+		for(j=0;j<i;j++)
+		{
+			printf("*");
+		}
+		for(j=a-i;j>0;j=j-2)
+		{
+			printf("-");
+		}
+		printf("\n");
+	}
+	for(i=a-2;i>0;i=i-2)
+	{
+		for(j=1;j<a-i;j=j+2)
+		{
+			printf("-");
+		}
+		for(j=i;j>0;j--)
+		{
+			printf("*");
+		}
+		for(j=1;j<a-i;j=j+2)
+		{
+			printf("-");
+		}
+		printf("\n");
+	}
+}
